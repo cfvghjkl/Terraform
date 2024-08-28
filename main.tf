@@ -10,13 +10,13 @@ provider azurerm {
   features {}
 }
 
-resource "azurerm_resource_group" "StorageApplication" {
-  name     = "StorageApplication"
+resource "azurerm_resource_group" "StorageApplication1" {
+  name     = "StorageApplication1"
   location = "West Europe"
 }
 
-resource "azurerm_storage_account" "storage_account" {
-  name                     = "terraformstore8830"
+resource "azurerm_storage_account" "storage_account1" {
+  name                     = "terraformstore88301"
   resource_group_name      = azurerm_resource_group.StorageApplication.name
   location                 = azurerm_resource_group.StorageApplication.location
   account_tier             = "Standard"
